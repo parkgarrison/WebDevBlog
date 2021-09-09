@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>Second Blog!</h2>
+    </head>
+    <body>
+    
+       This week I learned alot about module bundlers for JavaScript. In languages like java and <br>
+        python you can use an import or include statements to inherit code from other files. JavaScript <br>
+        did not come with this functionality because of security reasons. So instead, each time you wanted <br>
+        to inherit a file you would need to load each one and share all variables on the global level. This is <br>
+        obviously a lot of extra work so programmers started the project called CommonJS which was created to allow <br>
+        modules in JavaScript and make inheritance easier. The most common version of CommonJS is node.js which is <br>
+        still used today!<br><br><br>
+
+        If you look at my first blog you can see that to include the moment class originally, you needed several <br>
+        lines of code. However, with node.js you can load the file in with just one line! <br><br>
+
+        <b>var moment = require('moment'); </b><br><br>
+
+        If you simply include the above line in your .js file you can then use the moment methods freely! So node.js <br>
+        gives JavaScript module usability which greatly reduces the effort needed to include other files. There is one <br>
+        issue with this though and that is if you try to write this line in the browser you will get an error <br> 
+        so this line really only works in node.js. That is why we need module bundlers. A module bundler further <br>
+        simplifies the process by building all the files and then giving you output that CAN be run in the browser! <br>
+        In the commonly used module bundler "Webpack" you can run the following command: <br><br>
+
+       <b> $ ./node_modules/.bin/webpack index.js --mode=development</b> <br><br>
+
+        This command will look through your file and find all the "require" statements and build them together into <br>
+        a single file. Now you can specify the output file in your browser and everything will work as planned!! <br>
+        Even though this is mainly a quality of life addition, a module bundler was considered revolutionary for it's <br>
+        time. When you need to use many different JavaScript a module bundler can save you loads of time and allow for <br>
+        easier updates when you change your code! <br>
+    </body>
+    <footer>
+        <a href="https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70">MY SOURCE FOR THIS BLOG</a>
+        <br><br><br>
+        <img alt="JS Comic 2" src="https://miro.medium.com/max/875/1*ee_ivxNTKgIJTjmEMC4-dg.png"
+            width="750" height="300">
+    </footer>
+</html>
